@@ -18,6 +18,8 @@ pipeline {
         stage('Test') {
             steps {
                 sh 'echo "lixiaobin test"'
+                sh 'pwd'
+                sh 'ls /root/test.text'
             }
         }
     }
