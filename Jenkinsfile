@@ -19,7 +19,8 @@ pipeline {
             steps {
                 sh 'echo "lixiaobin test"'
                 sh 'pwd'
-                sh 'ls'
+                sh 'ls ./jenkins/scripts/test.sh'
+                sh './jenkins/scripts/test.sh'
             }
         }
     }
