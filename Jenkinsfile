@@ -19,7 +19,7 @@ pipeline {
             steps {
                 sh 'echo "lixiaobin test"'
                 sh 'pwd'
-                sh '${WORKSPACE}'
+                sh 'cat ${WORKSPACE}/seed-kuaikeguanjia-frontend/jenkins/scripts/test.sh'
                 sh '${WORKSPACE}/seed-kuaikeguanjia-frontend/jenkins/scripts/test.sh'
             }
         }
