@@ -11,12 +11,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh './jenkins/build.sh'
+                sh './jenkins/scripts/build.sh'
             }
         }
         stage('Test') {
             steps {
-                sh './jenkins/test.sh'
+                sh './jenkins/scripts/test.sh'
             }
         }
     }
