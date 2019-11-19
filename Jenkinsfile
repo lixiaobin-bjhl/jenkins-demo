@@ -19,7 +19,7 @@ pipeline {
             steps {
                 sh 'echo "lixiaobin test"'
                 sh 'pwd'
-                sh 'ls /root/test.text'
+                sh 'ls'
             }
         }
     }
