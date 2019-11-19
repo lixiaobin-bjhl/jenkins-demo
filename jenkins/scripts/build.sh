@@ -1,3 +1,3 @@
-#!/bin/bash -ilex
+#!/bin/bash -x
 
 echo "build"

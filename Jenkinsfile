@@ -6,6 +6,7 @@ pipeline {
         }
     }
     environment {
+        STUFF = "${MTI_HOME}/linux:${MTI_HOME}/bin:${QUARTUS_HOME}/bin:${DCP_LOC}/bin"
         CI = 'true'
     }
     stages {
@@ -16,9 +17,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-             withEnv(['PATH+EXTRA=/usr/sbin:/usr/bin:/sbin:/bin']) {
-                sh './jenkins/scripts/test.sh'
-             }
+              sh  './jenkins/scripts/test.sh'
             }
         }
     }
