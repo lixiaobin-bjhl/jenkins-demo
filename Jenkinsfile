@@ -1,10 +1,5 @@
 pipeline {
-    agent {
-        docker {
-            image 'node:6-alpine'
-            args '-p 3000:3000'
-        }
-    }
+    agent any
     environment {
         STUFF = "${MTI_HOME}/linux:${MTI_HOME}/bin:${QUARTUS_HOME}/bin:${DCP_LOC}/bin"
         CI = 'true'
