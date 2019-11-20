@@ -18,10 +18,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh 'echo "lixiaobin test"'
-                sh 'pwd'
-                sh 'cat ${WORKSPACE}/jenkins/scripts/test.sh'
-                sh '${WORKSPACE}/jenkins/scripts/test.sh'
+                sh './jenkins/scripts/test.sh'
             }
         }
     }
