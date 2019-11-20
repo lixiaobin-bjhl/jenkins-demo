@@ -5,6 +5,12 @@ pipeline {
         CI = 'true'
     }
     stages {
+        stage('Build') {
+            agent node:6-alpine
+            steps {
+                sh 'npm install'
+            }
+        }
         stage('Test') {
             steps {
                 sh 'echo "lixiaobin test"'
